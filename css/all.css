@@ -1,0 +1,449 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ------------------------------ */
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.wrap {
+    max-width: 1920px;
+    /* width: 1200px; */
+    margin: 0 auto;
+}
+
+.content {
+    width: 62.5%;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 48px;
+    /* margin-bottom: 48px; */
+}
+
+.header h1 {
+    font-size: 80px;
+    font-family: "Regular", "Andale Mono";
+    text-align: left;
+    line-height: 90px;
+    width: 288px;
+}
+
+
+/* 橫線 */
+
+.linebar_pro,
+.linebar_Edu,
+.linebar_Exp,
+.linebar {
+    position: relative;
+    width: 100%;
+    top: 8px;
+    border-top: 1px solid #000;
+    margin-bottom: 32px;
+}
+
+.linebar {
+    top: 24px;
+    border-width: 2px;
+}
+
+.linebar_Skill {
+    position: relative;
+    width: 83%;
+    top: 8px;
+    left: 8%;
+    border-top: 1px solid #fff;
+    margin-bottom: 32px;
+}
+
+.header img {
+    margin-top: 48px;
+}
+
+.education h3,
+.profile h3,
+.skill h3,
+.workexperience h3 {
+    font-size: 32px;
+    font-family: "PingFang TC", Medium;
+    line-height: 45px;
+}
+
+.education span,
+.profile span,
+.skill span,
+.workexperience span {
+    font-size: 24px;
+    color: #A00404;
+    font-family: Roboto, Medium;
+    padding-left: 16px;
+}
+
+.profile {
+    margin-top: 48px;
+}
+
+.profile>ul>li {
+    margin-bottom: 24px;
+    line-height: 36px;
+}
+
+.pro_Info,
+.edu_Info,
+.work_Info {
+    margin-top: 24px;
+    margin-left: 48px;
+}
+
+
+/* 內文字型 */
+
+.pro_Info li,
+.edu_Info li,
+.workexperience li {
+    font-size: 24px;
+    line-height: 36px;
+    font-family: "PingFang TC", Light;
+    font-weight: 300;
+}
+
+.workexperience li {
+    font-family: "PingFang TC", Medium;
+    font-weight: 400;
+}
+
+
+/* 小圓點 */
+
+.circle_pro,
+.circle_Edu,
+.circle_Edu2 {
+    position: relative;
+}
+
+.circle_pro::after,
+.circle_Edu::after,
+.circle_Edu2::after {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    top: 10px;
+    left: 16px;
+    border-radius: 50%;
+    background: #96A9C4;
+}
+
+.circle_Edu2::after {
+    top: 80px;
+}
+
+
+/* 兩圓點之間的連接線 */
+
+.circleLine {
+    position: relative;
+}
+
+.circleLine::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 70px;
+    top: 10px;
+    left: 24px;
+    bottom: 0;
+    background: #96A9C4;
+}
+
+.education,
+.skill,
+.workexperience,
+.footer {
+    margin-top: 72px;
+}
+
+.education li {
+    margin-bottom: 32px;
+    line-height: 36px;
+}
+
+
+/* box skill*/
+
+.box {
+    position: relative;
+}
+
+.box::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 360px;
+    background: #96A9C4;
+    top: 13%;
+    bottom: 0;
+    z-index: -1;
+}
+
+.skill {
+    width: 62.5%;
+    margin: 0 auto;
+    background-color: #415165;
+}
+
+.skill h3,
+.skill span {
+    color: #fff;
+    text-align: center;
+    padding: 24px 0 8px 16px;
+}
+
+.skill_Info {
+    display: flex;
+    justify-content: center;
+}
+
+.skill ul {
+    margin-top: 40px;
+    border-left: 1px solid #96A9C4;
+    margin-bottom: 56px;
+}
+
+.skill ul li {
+    color: #fff;
+    font-size: 24px;
+    font-family: Roboto, Light;
+    font-weight: 300;
+    line-height: 40px;
+    padding-left: 23px;
+}
+
+.work_Info li {
+    margin-bottom: 32px;
+}
+
+.work_Detail img {
+    padding: 8px 0;
+}
+
+.work_Detail p {
+    width: 80%;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.work_Info {
+    border-left: 1px solid #96A9C4;
+    margin-left: 24px;
+    padding-left: 24px;
+}
+
+.footer {
+    width: 100%;
+    background: #415165;
+    color: #ffffff;
+}
+
+.footer h3 {
+    font-size: 32px;
+    font-family: "PingFang TC", Medium;
+    padding: 24px 0 8px 0;
+    text-align: center;
+}
+
+.linebar_footer {
+    position: relative;
+    width: 62.5%;
+    left: 18.5%;
+    border-top: 1px solid #fff;
+    margin-bottom: 32px;
+}
+
+.footer span {
+    font-size: 24px;
+    font-family: Roboto, Medium;
+}
+
+.footer_Info {
+    margin-top: 16px;
+}
+
+.footer_Info li {
+    font-size: 24px;
+    font-family: "PingFang TC", Light;
+    margin-bottom: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon a {
+    display: inline-block;
+    padding: 0 12px;
+    margin-bottom: 48px;
+}
+
+@media screen and (max-width:1040px) {
+    .circle_Edu2::after {
+        top: 115px;
+        left: 16px;
+    }
+    .circleLine::after {
+        height: 115px;
+    }
+}
+
+@media screen and (max-width:566px) {
+    .circle_Edu2::after {
+        top: 150px;
+        left: 16px;
+    }
+    .circleLine::after {
+        height: 150px;
+    }
+}
